@@ -1,0 +1,18 @@
+.btn {
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 225px;
+	height: 60px;
+	background: linear-gradient(45deg, darken($bg-color--btn, 5%) 40%, $bg-color--btn 30%);
+	text-transform: uppercase;
+
+	&:hover {
+		background: linear-gradient(45deg, $bg-color--btn 40%, lighten($bg-color--btn, 5%) 30%);
+	}
+
+	&:active {
+		transform: scale(0.95);
+	}
+}

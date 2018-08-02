@@ -1,0 +1,18 @@
+.reviews {
+	background-image: url(../img/reviews_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.reviews__contaier {
+	padding-top: 107px;
+	padding-bottom: 200px;
+}
+
+.reviews__title {
+	margin-bottom: 83px;
+	text-align: center;
+	font-size: 36px;
+	font-family: $font-family--secondary;
+	color: $color--title;
+}

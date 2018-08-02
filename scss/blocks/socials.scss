@@ -1,0 +1,25 @@
+.socials__list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.socials__item {
+	margin-right: 21px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.socials__svg {
+	fill: #ffffff;
+
+	&:hover {
+		fill: #4d69e0;
+	}
+}

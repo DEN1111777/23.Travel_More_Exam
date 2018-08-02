@@ -1,0 +1,38 @@
+html {
+	scroll-behavior: smooth;
+}
+
+a,
+input[type="submit"],
+input[type="button"],
+button {
+  -webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  -moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  -o-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+body {
+	// min-width: 1200px; //If need min-width requirements
+	font-family: $font-family--main;
+	font-size: $font-size--main;
+	font-weight: $font-weight--main;
+	line-height: $line-height--main;
+	background-color: $bg-color--body; //if no img to read white text
+	color: $color--main;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+	color: $color--btn;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+}

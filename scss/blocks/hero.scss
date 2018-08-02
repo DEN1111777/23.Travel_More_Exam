@@ -1,0 +1,73 @@
+.hero {
+	position: relative;
+	background-color: $bg-color--body;
+	background-image: url(../img/Hero_bg_img.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero {
+		min-height: 50vh;
+	}
+}
+
+.hero__container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 260px;
+	padding-bottom: 290px;
+	color: $color--title;
+}
+
+.hero__title {
+	margin: 0;
+	font-size: 48px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.2;
+	letter-spacing: 0.1em;
+}
+
+.hero__slogan {
+	margin-bottom: 50px;
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 1.2;
+	letter-spacing: 0.31em;
+}
+
+.hero__scroll {
+	position: absolute;
+	bottom: 150px;
+	font-size: 14px;
+	letter-spacing: 0.2em;
+	line-height: 1.2;
+
+	&::after {
+		content: '';
+		display: block;
+		box-sizing: border-box;
+		margin-left: auto;
+		margin-right: auto;
+		width: 9px;
+		height: 9px;
+		border-left: 1px solid white;
+		border-bottom: 1px solid white;
+		transform: rotate(-45deg);
+	}
+
+	&:hover {
+		color: #7f99fb;
+		transition: all .3s ease-in;
+
+		&::after {
+			transition: all .3s ease-in;
+			transform: rotate(-45deg) translate(-10px, 10px);
+			border-bottom: 1px solid #7f99fb;
+			border-left: 1px solid #7f99fb;
+		}
+	}
+}

@@ -1,0 +1,45 @@
+.order {
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&--one {
+	background-image: url(../img/order_one_img.jpg);
+	}
+
+	&--two {
+	background-image: url(../img/order_two_img.jpg);
+	}
+}
+
+.order__container {
+	display: flex;
+	padding-top: 229px;
+	padding-bottom: 103px;
+
+	&--right {
+		justify-content: flex-end;
+	}
+}
+
+.order__card {
+	flex-basis: calc(50% - 15px);
+	box-sizing: border-box;
+	padding: 44px 30px;
+	background-color: rgba(35, 35, 35, 0.9);
+}
+
+.order__title {
+	margin-bottom: 20px;
+	font-size: 20px;
+
+	&--sub {
+		color: $color--title;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+		letter-spacing: 0.1em;
+	}
+}
+
+.order__text {
+	margin-bottom: 45px;
+}

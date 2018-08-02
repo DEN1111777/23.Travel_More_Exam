@@ -1,0 +1,31 @@
+.comment {
+	display: flex;
+}
+
+.comment__photo {
+	// width: 445px;
+	width: auto;
+}
+
+.comment__text {
+	margin: 0;
+}
+
+.comment__text--wrapper {
+	// display: flex;
+	// flex-direction: column;
+	padding: 44px 45px 50px 57px;
+	font-weight: 300;
+	background-color: $bg-color--gray;
+}
+
+.comment__title {
+	margin-bottom: 30px;
+	font-size: 20px;
+	color: $color--title;
+	text-transform: uppercase;
+}
+
+.comment__text--first-letter{ //for " ::first-letter don't work
+	color: $bg-color--body;
+}
